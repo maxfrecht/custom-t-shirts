@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__body">
+        <div class="product__preview">
+          <img src="./img/tee_shirt_blanc.png" alt="" />
+          <p class="error"></p>
+        </div>
+        <div class="product__personalisation">
+          <div class="product__color">
+            <h2>Choisir une couleur</h2>
+            <div class="product__colors">
+              <img src="./img/tee_shirt_blanc.png" alt="" class="white" />
+              <img src="./img/tee_shirt_rouge.png" alt="" class="red" />
+              <img src="./img/tee_shirt_bleu.png" alt="" class="white" />
+              <img src="./img/tee_shirt_vert.png" alt="" class="white" />
+            </div>
+          </div>
+          <form class="form">
+            <div class="form__group texte">
+              <h2>Texte</h2>
+              <div class="lines">
+                <label for="ligne1">ligne1</label>
+                <input type="text" name="ligne1" id="ligne1" />
+              </div>
+              <div class="lines">
+                <label for="ligne2">ligne2</label>
+                <input type="text" name="ligne2" id="ligne2" disabled/>
+              </div>
+              <div class="lines">
+                <label for="ligne3">ligne3</label>
+                <input type="text" name="ligne3" id="ligne3" disabled/>
+              </div>
+              <div class="colors">
+                <label for="colors">couleur du texte</label>
+                <input type="color" name="color" id="color" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="product__font">Police</label>
+              <select name="fonts" id="product__font">
+                <option value="Arial, Helvetica, sans-serif">Arial</option>
+                <option value="'Times New Roman', Times, serif">
+                  Times New Roman
+                </option>
+                <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                  Segoe UI
+                </option>
+              </select>
+            </div>
+          </form>
+          <div class="product__font-size">
+            <h2>Taille de la police</h2>
+            <div class="font-sizes">
+              <button>
+                <span class="material-icons">format_size</span>
+              </button>
+              <button>
+                <span class="material-icons"> format_size </span>
+              </button>
+            </div>
+          </div>
+          <div class="product__align">
+            <h2>Alignement</h2>
+            <div class="product__aligns">
+              <button data-align="left">
+                <span class="material-icons"> format_align_left </span>
+              </button>
+              <button data-align="right">
+                <span class="material-icons"> format_align_right </span>
+              </button>
+              <button data-align="center">
+                <span class="material-icons"> format_align_center </span>
+              </button>
+              <button data-align="justify">
+                <span class="material-icons"> format_align_justify </span>
+              </button>
+            </div>
+          </div>
+          <div class="product__position">
+            <h2>Position du texte</h2>
+            <div class="product__positions">
+              <button>
+                <span class="material-icons"> keyboard_arrow_up </span>
+              </button>
+              <button>
+                <span class="material-icons"> keyboard_arrow_left </span>
+              </button>
+              <button>
+                <span class="material-icons"> keyboard_arrow_right </span>
+              </button>
+              <button>
+                <span class="material-icons"> keyboard_arrow_down </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+*, *::after,*::before {
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f1f1f1;
+  color: #333;
+}
+
+button {
+  border: 0;
+  border-radius: 0.3rem;
+  background: #f1f1f1;
+}
+
+input:not(input[type='color']), select {
+  padding: .5rem;
+  border-radius: .5rem;
+  border: none;
+  margin-left: 0.5rem;
+  background: #f1f1f1;
+  box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.1);
+}
+
+input[type='text']:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type='color'] {
+  padding: 0;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
+  border-radius: .3rem;
+}
+
+.card__body {
+  display: flex;
+}
+
+.product__preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product__preview .preview__text {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.product__preview .error {
+  position: absolute;
+  bottom: 5%;
+  color: red;
+}
+
+.limit {
+  /* border: 1px solid; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+}
+
+.product__preview img {
+  max-width: 30rem;
+  padding: 2rem;
+}
+
+.product__personalisation {
+  padding: 2rem;
+  background: rgb(216, 204, 204);
+}
+
+.product__personalisation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product__color, .product__align, .product__font-size {
+  margin-bottom: 2rem;
+}
+
+.product__font-size button {
+  width: 4rem;
+  height: 4rem;
+}
+
+.font-sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-sizes button + button {
+  margin-left: 1rem;
+}
+
+.product__font-size button:nth-of-type(1) span {
+  font-size: 1.6rem;
+}
+
+.product__colors {
+  display: flex;
+}
+
+.product__colors img {
+  max-width: 7rem;
+  cursor: pointer;
+}
+
+.product__colors img + img {
+  margin-left: 1rem;
+}
+
+form .form__group {
+  margin-bottom: 2rem;
+} 
+
+form .form__group.texte {
+  display:  flex;
+  flex-direction: column;
+}
+
+.form__group.texte div + div {
+  margin-top: 2rem;
+}
