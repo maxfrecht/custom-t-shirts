@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc * .ts"
+    "build": "tsc ./js/index.ts"
   },
   "keywords": [],
   "author": "",
